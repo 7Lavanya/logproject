@@ -7,6 +7,7 @@ function App() {
         password:''
     });
     const handleInputChange = (e) => {
+        //Why Array Destructre used here
         setState((props) =>({...props,
             [e.target.name] : e.target.value
         }))
@@ -14,6 +15,8 @@ function App() {
     const handleSubmit = (e) =>{
         e.preventDefoult();
         alert(state);
+        //And How To Validate username and password
+        //After Validate it how to show Success Message
     }
   return (
     <div className="App">
